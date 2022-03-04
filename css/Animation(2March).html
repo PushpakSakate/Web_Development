@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #div1 {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            animation-name: abc;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        @keyframes abc {
+            5% {
+                background-color: blue;
+                top: 20px;
+                left: 50px;
+            }
+
+            15% {
+                background-color: green;
+                top: 30px;
+                left: 100px;
+            }
+
+            30% {
+                background-color: purple;
+                top: 50px;
+                left: 200px;
+            }
+
+            50% {
+                background-color: red;
+                top: 100px;
+                left: 350px;
+            }
+
+            65% {
+                background-color: yellow;
+                top: 50px;
+                left: 500px;
+            }
+
+            78% {
+                background-color: brown;
+                top: 30px;
+                left: 650px;
+            }
+
+            100% {
+                background-color: aqua;
+                top: 0px;
+                left: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="div1"></div>
+    </div>
+</body>
+
+</html>

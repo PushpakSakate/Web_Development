@@ -1,0 +1,65 @@
+					CASCADING STYLE SHEET(CSS)
+
+1) Types:
+	1.Inline
+	2.Internal
+	3.External
+
+2) Selectors:
+	1.Simple Selectors :		 Id,Tag,Class.
+	2. Combinator Selectors:	Descendent,Child,Sibling
+
+	3.Pseudo Class selectors
+	4.Pseudo Element Selectors
+	5.Attribute........{Remaining}
+
+3) Grouping Selector
+
+4) Color
+
+5) Background Properties
+
+6) Border
+ 
+7) Outline
+
+8) Box-model 
+
+9) Selectors:
+	# Sibling :
+		1.Adjacent Sibling Selector
+		2.General Sibling Selector
+
+	3.Pseudo Class selectors:
+		1.Link
+		2.Visited
+		3.Hover
+		4.Active
+		5.Nth Selector
+
+10) Inline And Block
+
+11) Gradients
+
+12) Specificity
+
+13) Position
+
+14) Float
+
+15) Box-sizing
+
+16) Flex:
+	1.Flex Container
+	2.Flex Items
+	3.Flex Responsive.........{Remaining}
+
+17) Max-Width,Min-Width
+
+18) Pseudo Element Selectors
+
+19) Media Queries:
+	#Mediatype:
+		1.All
+		2.Pointer
+		3.Screen

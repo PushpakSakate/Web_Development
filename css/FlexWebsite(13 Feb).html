@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarant</title>
+    <style>
+        body {
+            margin: 0px;
+            background-image: url('../img/download.jfif');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .div1 {
+            margin: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a {
+            padding: 20px;
+            width: 300px;
+            margin-right: 10px;
+            text-align: center;
+            color: black;
+            font-size: 25px;
+            font-weight: bolder;
+            text-decoration: none;
+            background-color: orange;
+            text-shadow: 5px 5px 5px yellow;
+        }
+
+        .div1>a:hover {
+            font-size: 30px;
+            color: aqua;
+            border-radius: 15%;
+            background-color: blueviolet;
+        }
+
+        #product {
+            display: flex;
+            height: 500px;
+            width: 100%;
+        }
+
+        #div2 {
+            margin: 15px;
+            flex-grow: 5;
+            height: 400px;
+            width: 300px;
+        }
+
+        #div2>img {
+            overflow: auto;
+        }
+
+        #div2>img:hover {
+            border-radius: 10%;
+        }
+
+        #div3 {
+            margin: 15px;
+            flex-grow: 1;
+            height: 400px;
+            width: 300px;
+        }
+
+        #div3>div {
+            height: 188px;
+            margin-bottom: 20px;
+            align-items: center;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        #div3>div:hover {
+            color: aqua;
+            border-radius: 15%;
+            background-color: blueviolet;
+        }
+
+        #content {
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #content>div {
+            height: 200px;
+            width: 200px;
+        }
+
+        #content>div:hover {
+            border-radius: 30%;
+            box-shadow: 2px 2px 2px 2px orange;
+        }
+
+        #section {
+            margin-top: 40px;
+            height: 400px;
+            width: 100%;
+            display: flex;
+        }
+
+        #section>div {
+            height: 400px;
+        }
+
+        .section1:hover {
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px 2px orange;
+        }
+
+        .section2>a:hover {
+            color: aqua;
+            border-radius: 15%;
+            background-color: blueviolet;
+        }
+
+        #gradient {
+            display: flex;
+            justify-content: baseline;
+            margin-top: 10px;
+        }
+
+        #geadient>div {
+            border: 1px solid;
+        }
+
+        .grad1 {
+            height: 15px;
+            flex-grow: 5;
+            background-image: linear-gradient(to right, rgba(255, 165, 0, 0), rgba(255, 165, 0, 1.0));
+        }
+
+        .grad3 {
+            background-image: linear-gradient(to left, rgba(255, 165, 0, 0), rgba(255, 165, 0, 1.0));
+        }
+
+        #grad2 {
+            flex-grow: 1;
+        }
+
+        #grad2>p {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+            text-shadow: 5px 5px 5px grey;
+        }
+
+        #image {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        #image>img {
+            border-radius: 30%;
+        }
+
+        #img1:hover {
+            box-shadow: 2px 2px 2px 2px lightskyblue;
+        }
+
+        #img2:hover {
+            box-shadow: 2px 2px 2px 2px orange;
+        }
+
+        #img3:hover {
+            box-shadow: 2px 2px 2px 2px purple;
+        }
+
+        #img4:hover {
+            box-shadow: 2px 2px 2px 2px green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <a title="Tacos" href="#">TACOS</a>
+        <a title="Beers" href="#">BEERS</a>
+        <a title="Wines" href="#">WINES</a>
+        <a title="Deserts" href="#">DESERTS</a>
+        <a title="Reservations" href="#">RESERVATIONS</a>
+    </div>
+
+    <div id="product">
+        <div id="div2"><img title="Taco" src="../img/tacos.jpg" height="100%" width="100%"></div>
+        <div id="div3">
+            <div>
+                <p>$1.99</p>
+                <p>Tacos</p>
+            </div>
+
+            <div>
+                <p>$3.99</p>
+                <p>Kombucha</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div><img title="Taco" src="../img/Taco Clipart.png" height="100%" width="100%"></div>
+        <div><img title="Beer" src="../img/beer1.png" height="100%" width="100%"></div>
+        <div><img title="Wine" src="../img/Wine_logo.png" height="100%" width="100%"></div>
+        <div><img title="Music" src="../img/music-logo.png" height="100%" width="100%"></div>
+    </div>
+
+    <!--Section Start-->
+    <div id="section">
+        <div class="section1"><img title="Taco" src="../img/taco.png" height="100%" width="100%"></div>
+        <div class="section2">
+            <h1>Featured Taco</h1>
+            <h2>Slim Profile, easy to hold and loaded with cheese.</h2>
+            <h2>This is the one you have been waiting for</h2>
+            <a style="font-size: medium; padding: 10px;" href="#">Learn More &#8594;</a>
+        </div>
+    </div>
+    <!--Section End-->
+
+    <div id="gradient">
+        <div class="grad1"></div>
+        <div id="grad2">
+            <p>Instant Grams</p>
+        </div>
+        <div class="grad1 grad3"></div>
+    </div>
+
+    <div id="image">
+        <img id="img1" src="../img/Recovered_JPEG Digital Camera_10.jpg">
+        <img id="img2" src="../img/Recovered_JPEG Digital Camera_11.jpg">
+        <img id="img3" src="../img/Recovered_JPEG Digital Camera_12.jpg">
+        <img id="img4" src="../img/Recovered_JPEG Digital Camera_13.jpg">
+    </div>
+</body>
+
+</html>

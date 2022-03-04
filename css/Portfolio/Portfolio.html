@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        header {
+            position: fixed;
+            background-color: black;
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+            animation-name: lmn;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            text-shadow: 7px 7px 7px black;
+        }
+
+        #span1 {
+            color: white;
+            font-size: 40px;
+            font-family: 'supermercado one', cursive;
+        }
+
+        nav {
+            position: sticky;
+            top: 118px;
+            color: white;
+            background-color: navy;
+            font-family: 'supermercado one', cursive;
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        input {
+            background-color: cyan;
+        }
+        input:hover{
+            font-size: medium;
+            background-color: darkcyan;
+        }
+        .list1 {
+            display: inline-block;
+        }
+
+        #div1 {
+            float: right;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .abc {
+            background-color: green;
+        }
+
+        .abc:hover {
+            font-size: 15px;
+            background-color: blue;
+            color: gray;
+        }
+
+        ul li {
+            margin: 0px 10px;
+            float: right;
+        }
+
+        ul li:hover {
+            color: turquoise;
+            font-size: 20px;
+
+        }
+
+        #section1 {
+            background-color: violet;
+            height: 300px;
+            text-align: center;
+            padding-top: 150px;
+            font-family: 'supermercado one', cursive;
+            animation-name: xyz;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            text-shadow: 7px 7px 7px lightslategray;
+
+        }
+
+        h1 {
+            margin-bottom: 0px;
+            font-size: 40px;
+        }
+
+        p {
+            margin: 0px;
+            font-weight: lighter;
+        }
+
+        #section2 {
+            padding-top: 5px;
+            background-color: gray;
+            height: 300px;
+            animation-name: pqr;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        img {
+            border-radius: 50%;
+            padding: 50px 90px;
+        }
+
+        img:hover {
+            border-radius: 30%;
+        }
+
+        #footer1 {
+            height: 100px;
+            padding-top: 50px;
+            text-align: center;
+            background-color: coral;
+            font-family: 'supermercado one', cursive;
+            text-shadow: 7px 7px 7px black;
+        }
+
+        @keyframes xyz {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: orange;
+            }
+
+            75% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: yellow;
+            }
+        }
+
+        @keyframes lmn {
+            0% {
+                background-color: blue;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: cyan;
+            }
+
+            75% {
+                background-color: gray;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
+        @keyframes pqr {
+            0% {
+                background-color: lightblue;
+            }
+
+            25% {
+                background-color: lightcoral;
+            }
+
+            50% {
+                background-color: lightcyan;
+            }
+
+            75% {
+                background-color: gray;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header>
+        <span id="span1">Personal Portfolio</span><br>
+        <a href="../../html/first.html">Portfolio.Org</a>
+        <div class="container">
+            <div id="div1">
+                <input class="abc" type="button" value="View in editor">
+                <input class="abc" type="button" value="Sign Up ">
+                <input class="abc" type="button" value="Login ">
+            </div>
+        </div>
+    </header>
+    <!-- Page Header End -->
+
+    <!-- Page Navigation -->
+    <nav>
+        <input type="button" value="menu">
+        <ul>
+            <a href="#footer1">
+                <li class="list1">Contact</li>
+            </a>
+
+            <a href="#section2">
+                <li class="list1">Work</li>
+            </a>
+
+            <a href="#section1">
+                <li class="list1">About</li>
+            </a>
+        </ul>
+    </nav>
+    <!-- Page Navigation End -->
+
+    <!-- Page Section -->
+    <section id="section1">
+        <h1> I am Pushpak</h1>
+        <p>a Freakin' Web Developer</p>
+    </section>
+    <!-- Page Section End-->
+
+    <!-- Page Section -->
+    <section id="section2">
+
+        <img title="Black forest" src="../../img/black forest.jpg" alt="Black forest" height="225px" width="250px">
+
+       <img title="Pushpak" src="../../img/Pushpak Sakate_2.jpg" alt="Black forest" height="225px" width="250px">
+
+        <img title="Mustang" src="../../img/mustang.jfif" alt="Black forest" height="225px" width="250px">
+
+
+    </section>
+    <!-- Page Section End-->
+
+    <!-- Page Section -->
+    <section id="section2">
+        <img title="Mustang" src="../../img/mustang.jfif" alt="Black forest" height="225px" width="250px">
+        
+        <img title="Pushpak" src="../../img/Pushpak Sakate_2.jpg" alt="Black forest" height="225px" width="250px">
+
+        <img title="Black forest" src="../../img/black forest.jpg" alt="Black forest" height="225px" width="250px">
+
+    </section>
+    <!-- Page Section End-->
+    <hr style="border: 1px solid blue;margin: 0px">
+    <section id="section3">
+
+
+    </section>
+
+    <!-- Page Footer-->
+    <div id="footer1">
+        <footer>
+            All rights are reserved!&copy;2022<br>Contact No. 0123456789
+        </footer>
+        <!-- Page Footer-->
+    </div>
+</body>
+
+</html>

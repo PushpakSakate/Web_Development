@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        header {
+            border: 1px solid red;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            background-color: black;
+            font-family: 'supermercado one', cursive;
+
+        }
+
+        #header1 {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #head {
+            margin-left: 569px;
+            font-size: 20px;
+
+        }
+
+        nav {
+            border: 1px solid green;
+            height: 80px;
+            width: 100%;
+            background-color: rgb(178, 63, 34);
+            position: sticky;
+            display: flex;
+            flex-direction: row-reverse;
+            top: 100px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+
+        }
+
+        li {
+            padding: 20px;
+            color: white;
+            font-family: 'supermercado one', cursive;
+        }
+
+        li:hover {
+            font-size: 20px;
+            color: gray;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        section {
+            height: 400px;
+            text-align: center;
+            padding-top: 200px;
+            background-color: dimgrey;
+            font-family: 'supermercado one', cursive;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+            font-size: 40px;
+        }
+
+        p {
+            margin: 0px;
+            font-weight: lighter;
+        }
+
+        footer {
+            background-color: fuchsia;
+            height: 600px;
+            width: 100%;
+        }
+
+        .product>div {
+            border: 1px solid;
+            height: 200px;
+            width: 200px;
+        }
+
+        .product {
+            display: flex;
+            height: 300px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            min-width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p id="header1">Pushpak Sakate</p><br>
+        <a id="head" href="#">abc@gmail.com</a>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Contact Us</li>
+            </a>
+            <a href="#">
+                <li>Work</li>
+            </a>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>I am Pushpak</h1>
+        <p>a Freakin' Web Developer</p>
+    </section>
+
+    <footer>
+        <div id="items">
+            <div class="product">
+                <div><img src="../img/black forest.jpg" height="200px" width="200px"></div>
+                <div><img src="../img/chocolate.jpg" height="200px" width="200px"></div>
+                <div><img src="../img/vanilla.jpg" height="200px" width="200px"></div>
+            </div>
+            <div class="product">
+                <div><img src="../img/Pushpak Sakate_2.jpg" height="200px" width="200px"></div>
+                <div><img src="../img/mustang.jfif" height="200px" width="200px"></div>
+                <div><img src="../img/jd.jfif" height="200px" width="200px"></div>
+            </div>
+    </footer>
+</body>
+
+</html>

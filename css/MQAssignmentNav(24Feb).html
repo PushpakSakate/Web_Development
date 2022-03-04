@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            border: 1px solid;
+            background-color: black;
+        }
+        ul{
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+        }
+        @media screen and (max-width:900px) {
+            ul{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>More</li></a>
+            <a href="#"><li>Contact Us</li></a>
+        </ul>
+    </div>
+</body>
+</html>

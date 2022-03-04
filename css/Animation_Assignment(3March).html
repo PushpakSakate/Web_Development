@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #container {
+            border: 1px solid red;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .div1 {
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            border-radius: 50%;
+            background-color: aquamarine;
+        }
+
+        .box1 {
+            animation-name: abc;
+            animation-duration: 3s;
+            top: 0%;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes abc {
+            50% {
+                top: 60%;
+                background-color: blue;
+            }
+        }
+
+        .box2 {
+            animation-name: pqr;
+            animation-duration: 4s;
+            top: 0%;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pqr {
+            50% {
+                top: 70%;
+                background-color: blueviolet
+            }
+        }
+
+        .box3 {
+            animation-name: xyz;
+            animation-duration: 5s;
+            top: 0%;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes xyz {
+            50% {
+                top: 80%;
+                background-color: lightseagreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="div1 box1"></div>
+        <div class="div1 box2"></div>
+        <div class="div1 box3"></div>
+    </div>
+</body>
+
+</html>

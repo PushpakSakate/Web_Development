@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Practice</title>
+    <style>
+        #div1{
+            border: 1px solid;
+            height: 300px;
+            width: 300px;
+            background-image: linear-gradient(to right,red,green);   
+        }
+        #div2{border-radius: 50%;
+            border: 1px solid;
+            height: 300px;
+            width: 300px;
+            background-image: radial-gradient(circle,orange,lightcyan);
+        }
+        #div3{
+            border-radius: 50%;
+            border: 1px solid;
+            height: 300px;
+            width: 300px;
+            background-image: radial-gradient(ellipse,blue,pink);
+
+        }
+        #div4{
+            border-radius: 50%;
+            border:1px solid;
+            height: 300px;
+            width: 300px;
+            background-image: conic-gradient(red 0deg,red 45deg, yellow 45deg,yellow 90deg,green 90deg,green 135deg,blue 135deg,blue 180deg,black 180deg,black 225deg,pink 225deg,pink 270deg,brown 270deg,brown 315deg,lightyellow 315deg );
+        }
+        #div5{
+            border-radius: 50%;
+            border:1px solid;
+            height: 300px;
+            width: 300px;
+            background-image: conic-gradient(from 45deg,red 90deg,green 90deg,green 180deg,yellow 180deg,yellow 270deg,blue 270deg);
+        }
+        #div1,#div2,#div3,#div4,#div5{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+</body>
+</html>

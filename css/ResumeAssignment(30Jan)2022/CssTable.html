@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CssTable</title>
+    <style>
+        body{
+            margin-top: 30px;
+            background-color: lightgray;
+        }
+        table,tr,th{
+            border-collapse: collapse;
+        }
+        table{           
+            width: 70%;
+            margin: auto;          
+
+        }
+        tr{  
+            font-weight: bold;          
+            color: #50d07d;
+        }
+        tr:hover th {
+            background-color: lightseagreen;
+        }
+        th{
+            font-weight: bolder;
+            background-color: darkgreen;
+            color: #b2cecf;
+        }
+        tr:hover td{
+            background-color: coral;
+        }
+        tr:nth-child(even){
+            background-color: gray;
+        }
+
+        tr:nth-child(odd){
+            background-color: white;
+        }
+
+        div{
+            height: auto;
+            width: auto;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Month</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>Jan</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>Feb</td>
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>March</td>
+                <td>2002</td>
+            </tr>
+
+            <tr>
+                <td>Thu</td>
+                <td>April</td>
+                <td>2003</td>
+            </tr>
+
+            <tr>
+                <td>Fri</td>
+                <td>May</td>
+                <td>2004</td>
+            </tr>
+
+            <tr>
+                <td>Sat</td>
+                <td>June</td>
+                <td>2005</td>
+            </tr>
+
+            <tr>
+                <td>Sun</td>
+                <td>July</td>
+                <td>2006</td>
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header{
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            display: flex;
+        }
+        .div1{
+            border: 1px solid;
+            margin: 5px;
+            height: 100px;
+            flex-grow: 2;
+        }
+        #div2{
+            border: 1px solid;
+            margin: 5px;
+            height: 100px;
+            flex-grow: 4;
+        }
+        #container{
+            border: 1px solid blue;
+            display: flex;
+        }
+        .section{
+            border: 1px solid red;
+            margin: 5px;
+            height: 500px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .section>.section1{
+            border: 1px solid;
+            margin: 5px;
+            flex-grow: 2;
+        }
+        .section>.section2{
+            border: 1px solid;
+            margin: 5px;
+            flex-grow: 4;
+        }
+        .section>.section3{
+            border: 1px solid;
+            margin: 5px;
+            flex-grow: 6;
+        }
+    </style>
+</head>
+<body>
+    <header>Pushpak</header>
+
+        <section>
+            <div class="div1"></div>
+            <div id="div2"></div>
+            <div class="div1"></div>
+        </section>
+
+        <section id="container">
+            <div class="section">
+                <div class="section1"></div>
+                <div class="section2"></div>
+                <div class="section3"></div>
+            </div>
+            <div class="section">
+                <div class="section1"></div>
+                <div class="section2"></div>
+                <div class="section3"></div>
+            </div>
+            <div class="section">
+                <div class="section1"></div>
+                <div class="section2"></div>
+                <div class="section3"></div>
+            </div>
+        </section>
+</body>
+</html>
