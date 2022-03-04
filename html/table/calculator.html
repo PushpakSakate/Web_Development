@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+        }
+
+        td {
+            text-align: center;          
+        }
+
+        .class1>button {
+            background-color: red;
+            color: white;
+            font-size: 23px;
+        }
+
+        #class2>button {
+            background-color: rgb(5, 172, 5);
+            color: white;
+            font-size: 25px;
+
+        }
+
+        .class5 {
+            font-size: 25px;
+            font-weight: bold;
+            border: 1px solid;
+            text-align: right;
+        }
+
+        .button1 {
+            text-align: left;
+
+        }
+
+        #tel {
+            border: 1px solid;
+            height: 100%;
+            width: 100%;
+            text-align: right;
+            font-weight: bold;
+            font-size: 25px;
+            background-color: white;
+        }
+
+        button {
+            height: 100%;
+            width: 100%;
+            font-size: 23px;
+            font-weight: bold;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="11"><input id="tel" type="tel"></td>
+        </tr>
+        <tr class="class5">
+            <td></td>
+            <td class="class5" colspan="10" rowspan="1">0</td>
+        </tr>
+        <tr>
+            <td class="class3"><button>mode</button></td>
+            <td class="button1" colspan="5">
+                <input id="Calculator" type="radio" name="Calculation">
+                <label for="Calculator">deg</label>
+                <input id="Calculator" type="radio" name="Calculation">
+                <label for="Calculator">rad</label>
+            </td>
+            <td class="class3"><button>MC</button></td>
+            <td class="class3"><button>MR</button></td>
+            <td class="class3"><button>MS</button></td>
+            <td class="class3"><button>M+</button></td>
+            <td class="class3"><button>M-</button></td>
+        </tr>
+
+        <tr class="class3">
+            <td><button>sinh</button></td>
+            <td><button>cosh</button></td>
+            <td><button>tanh</button></td>
+            <td><button>Exp</button></td>
+            <td><button>(</button></td>
+            <td><button>)</button></td>
+            <td class="class1" colspan="2"><button>&#8592;</button></td>
+            <td class="class1"><button>C</button></td>
+            <td class="class1"><button>+/-</button></td>
+            <td><button>&#10003;</button></td>
+        </tr>
+
+        <tr class="class3">
+            <td><button>sinh<sup>-1</sup></button></td>
+            <td><button>cosh<sup>-1</sup></button></td>
+            <td><button>tanh<sup>-1</sup></button></td>
+            <td><button>log<sub>2</sub>x</button></td>
+            <td><button>ln</button></td>
+            <td><button>log</button></td>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button>/</button></td>
+            <td><button>%</button></td>
+        </tr>
+
+        <tr class="class3">
+            <td><button>&pi;</button></td>
+            <td><button>e</button></td>
+            <td><button>%</button></td>
+            <td><button>log<sub>y</sub>x</button></td>
+            <td><button>e<sup>x</sup></button></td>
+            <td><button>10<sup>x</sup></button></td>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button>*</button></td>
+            <td><button>1/x</button></td>
+        </tr>
+
+        <tr class="class3">
+            <td><button>sin</button></td>
+            <td><button>cos</button></td>
+            <td><button>tan</button></td>
+            <td><button>x<sup>y</sup></button></td>
+            <td><button>x<sup>3</sup></button></td>
+            <td><button>x<sup>3</sup></button></td>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button>-</button></td>
+            <td id="class2" rowspan="2"><button>=</button></td>
+        </tr>
+
+        <tr class="class3">
+            <td><button>sin<sup>-1</sup></button></td>
+            <td><button>cos<sup>-1</sup></button></td>
+            <td><button>tan<sup>-1</sup></button></td>
+            <td><button>y<sub>&#10003;</sub></button></td>
+            <td><button>3<sub>&#10003;</sub></button></td>
+            <td><button>|x|</button></td>
+            <td colspan="2"><button>0</button></td>
+            <td><button>.</button></td>
+            <td><button>+</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>

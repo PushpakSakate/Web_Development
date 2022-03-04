@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Survey</title>
+<style>
+    form{
+        text-align: center;
+        
+    }
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">Customer Survey</h1>
+<form>
+    <label for="First name">First name</label>
+    <input placeholder="first name" id="First name" type="text" name="customer name">&nbsp;
+
+    <label for="Middle name">Middle name</label>
+    <input placeholder="middle name" id="Middle name" type="text" name="customer name">&nbsp;
+
+    <label for="Last name">Last name</label>
+    <input placeholder="last name" id="Last name" type="text" name="customer name"><br><br>
+
+    <label>Gender</label><br>
+    <input id="male" type="radio" name="gender">
+    <label for="male">male</label>
+
+    <input id="female" type="radio" name="gender">
+    <label for="female">female</label><br><br>
+
+    <label for="Gmail ID">Gmail</label>
+    <input placeholder="gmail id" id="Gmail ID" type="text" name="gmail"><br><br>
+
+    <label for="Age">age</label>
+    <input placeholder="your age" id="Age" type="number" name="no"><br><br>
+    
+    <label>*How satisfied you with our this survey</label><br>
+    <select>
+            <option>somewhat satisfied</option>
+            <option>satisfied</option>
+            <option>very satisfied</option>
+    </select><br><br>
+
+    <label>*Would you recommend this survey to your friend?</label><br>
+    <input id="recommend" type="radio" name="recommendation">
+    <label for="recommend">Yes</label>
+    <input id="recommend" type="radio" name="recommendation">
+    <label for="recommend">No</label><br><br><br>
+
+    <label>How Would you rate us?</label><br>
+
+    <input id="five" type="range" name="5 star">
+    <label for="five">Five star</label><br><br><br>
+
+
+    <input type="submit" value="Save">
+</form>
+
+</body>

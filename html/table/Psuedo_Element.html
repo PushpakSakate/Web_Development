@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        p::first-line{
+            color: red;
+            font-size: 20px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px blue;
+            background-color: palevioletred;          
+        }
+        p::first-letter{
+            color: green;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px orange;
+            background-color:blue;
+            background-image: url('../../img/Recovered_JPEG\ Digital\ Camera_10.jpg');
+            background-repeat: no-repeat;
+        }
+        li::marker{
+            color: orange;
+        }
+        p::selection{
+            background-color:white;
+            font-size: 50px;
+
+        }
+        p::before{
+            content: url('../../img/black\ forest.jpg');
+        }
+        p::after{
+            content: url('../../img/mustang.jfif');
+        }
+    </style>
+</head>
+<body>
+   <img src="" alt="">
+    <p>Pushpak Sakate Pushpak Sakate Pushpak Sakate Pushpak Sakate Pushpak Sakate Pushpak Sakate Pushpak Sakate Pushpak Sakate Pushpak Sakate</p>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+    </ol>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+    
+</body>
+</html>
