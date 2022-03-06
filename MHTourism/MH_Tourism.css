@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    background-image: url('../MHTourism/Image/MH.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    display: flex;
+}
+
+ul {
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+li {
+    font-size: 30px;
+    padding: 20px;
+    color: lightcyan;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family:Helvetica;
+}
+
+li:hover {
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+img{
+    margin-left: 20px;
+    height: 120px;
+    width: 120px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    
+}
+p{
+    text-align: center;
+    margin: 70px;
+    color: limegreen;
+    font-size: 45px;
+    font-weight: bold;
+    font-family:Helvetica;
+    text-shadow: 2px 2px 4px black;
+}
+p:hover{
+    color:lightblue;
+    text-shadow: 2px 2px 4px black;
+}
+@media screen and (min-width:700px) {
+    ul{
+        display: flex;
+    }
+    
+}

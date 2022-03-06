@@ -1,0 +1,151 @@
+.header{
+    margin:0;
+    padding:0;
+    background-image: url("images/bg10.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+body{
+height: 100vh;
+    box-sizing: border-box;
+}
+nav{
+    width:100%;height:15vh;
+    /*background: rgba(0,0,0,0.3);*/
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.container{
+    display:inline-block;
+    cursor:pointer;
+}
+.bar1, .bar2 , .bar3{
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin:6px 0;
+    transition:0.4s;
+}
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px,6px);
+    transform:rotate(-45deg) translate(-9px,6px);
+}
+.change .bar2{
+    opacity:0;
+}
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px,-8px);
+    transform:rotate(45deg) translate(-8px,-8px);
+}
+.logo img{
+    width:70px;
+    height:70px;
+    float:left;
+   
+}
+.menu{
+    width:45%;
+    display:flex;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.menu a:hover{
+    color:#00b894;
+}
+
+.menu a{
+    width:25%;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.text{
+    padding-top: 80px;
+}
+.search{
+    padding:8px;
+    border-radius: 30px;
+    border: none !important;
+    color: black;
+    background:white;
+
+}
+#srch{
+    background-image: linear-gradient(#00ff7e,#1f3d90);
+    color:white !important;
+}
+main{
+    width:100%;
+    height:85vh;
+    display:flex;
+    justify-content: center;
+    
+    text-align:center;
+}
+section h3{
+    letter-spacing: 3px;
+    font-size:35px;
+    font-weight: 200;
+    text-shadow: 5px 5px 5px black;
+}
+section h1{
+    font-size: 55px;
+    font-family: 700;
+    text-shadow: 3px 2px 5px black;
+    margin:30px 0 20px 0;
+}
+
+section p{
+    word-spacing: 2px;
+    font-size:25px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+.chng-content:after{
+    content:'';
+    animation : changetext 10s infinite linear;
+    color:#00b894;
+}
+@keyframes changetext{
+    0%{content:"SATARA";}
+    6%{content:"MAHABALESHWAR";}
+    12%{content:"PACHGANI";}
+    18%{content:"MATHERAN";}
+    24%{content:"SHIRDI";}
+    30%{content:"KHANDALA";}
+    36%{content:"AURANGABAD";}
+    42%{content:"IGATPURI";}
+    48%{content:"ALIBAUG";}
+    54%{content:"NASHIK";}
+    60%{content:"GANPATIPULE";}
+    66%{content:"JANJIRA";}
+    72%{content:"TARKARLI";}
+    78%{content:"NAGPUR";}
+    84%{content:"MUMBAI";}
+    90%{content:"LONAVALA";}
+    95%{content:"PUNE";}
+    100%{content:"VAI";}
+}
+
+/*Features*/
+.img{
+    position:relative;
+    display:inline-flex;
+}
+
+.features img{
+    width:30%;
+    height:30%;
+    border:black double 2px;
+    padding:20px;
+    
+}
+.features{
+    justify-content: center;
+    align-items: center;
+}
+
+
