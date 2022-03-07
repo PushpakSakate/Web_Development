@@ -16,19 +16,22 @@
         }
 
         .div1 {
-            margin: 50px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            padding: 2%;
+            align-content: space-around;
         }
 
         a {
             padding: 20px;
             width: 300px;
-            margin-right: 10px;
+            margin: 2%;
             text-align: center;
             color: black;
             font-size: 25px;
+            flex: 1;
             font-weight: bolder;
             text-decoration: none;
             background-color: orange;
@@ -38,13 +41,12 @@
         .div1>a:hover {
             font-size: 30px;
             color: aqua;
-            border-radius: 15%;
             background-color: blueviolet;
         }
 
         #product {
             display: flex;
-            height: 500px;
+            flex-wrap: wrap;
             width: 100%;
         }
 
@@ -90,13 +92,14 @@
         }
 
         #content {
-            height: 200px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
         }
 
         #content>div {
             height: 200px;
+            margin: 2%;
             width: 200px;
         }
 
@@ -107,20 +110,22 @@
 
         #section {
             margin-top: 40px;
-            height: 400px;
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
         }
 
         #section>div {
-            height: 400px;
+            padding: 2%;
         }
 
         .section1:hover {
             border-radius: 50%;
             box-shadow: 2px 2px 2px 2px orange;
         }
-
+        .section2{
+            text-align: center;
+        }
         .section2>a:hover {
             color: aqua;
             border-radius: 15%;
@@ -187,6 +192,7 @@
         #img4:hover {
             box-shadow: 2px 2px 2px 2px green;
         }
+
     </style>
 </head>
 
