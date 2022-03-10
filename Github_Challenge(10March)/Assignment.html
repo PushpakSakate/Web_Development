@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0px;
+        }
+
+        #container {
+            display: flex;
+            background-color: #242526;;
+        }
+
+        #div1 {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #div1>a{
+            text-decoration: none;
+            color: white;
+        }
+        #search {
+            border: 1px solid whitesmoke;
+            padding: 5px;
+            border-radius: 6px;
+            height: 20px;
+            width: 250px;
+            background-color: black;
+            
+        }
+
+        #div2 {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        #div2>a {
+            text-decoration: none;
+            margin: 5px;
+            color: white;
+            font-size: 30px;
+
+        }
+
+        #div2>a>img {
+            border-radius: 50%;
+            height: 25px;
+            width: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="div1">
+            <img src="../Github_Challenge(10March)/img/git.png" height="30px" width="30px">
+            <input type="text" placeholder="search or jump to..." name="searchbar" id="search">
+            <a href="#"><div>Pull requests</div></a>
+            <a href="#"><div>Marketplace</div></a>
+            <a href="#"><div>Explore</div></a>
+        </div>
+
+        <div id="div2">
+            <a href="#">&#128365;</a>
+            <a href="#">+</a>
+            <a href="#"><img src="../Github_Challenge(10March)/img/profile.png"></a>
+        </div>
+    </div>
+</body>
+
+</html>
