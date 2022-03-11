@@ -12,7 +12,7 @@
             margin: 0px;
         }
 
-        #container {
+        #container1 {
             display: flex;
             background-color: #242526;;
         }
@@ -59,13 +59,61 @@
             height: 25px;
             width: 25px;
         }
+        #container2{
+            height: 60px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+
+        }
+        #section1{
+            flex-grow: 100;
+        }
+        #section1>a{
+            text-decoration: none;
+        }
+        #section1>span{
+            color: white;
+        }
+        #section1>img{
+            height: 15px;
+            width: 10px;
+            margin-left: 20px;
+    
+        }
+        #section1>#span2{
+            border: 1px solid grey;
+            margin: 5px;
+            font-size: 12px;
+            padding:3px 7px;
+            border-radius: 32px;
+        }
+        #section2{
+          display: flex;
+         flex-grow: 1;
+         
+        }
+        #section2>button{
+            background-color: black;
+            padding: 7px;
+            border-radius: 12px;
+            color: white;          
+        }
+        .butt1{
+            display: flex;
+            align-items: center;
+        }
+        .butt1>span{
+            margin:0px 5px;
+        }
     </style>
 </head>
 
 <body>
-    <div id="container">
+    <div id="container1">
         <div id="div1">
-            <img src="../Github_Challenge(10March)/img/git.png" height="30px" width="30px">
+            <img src="../Github_Challenge(10March)/img/git.png" height="20px" width="20px">
             <input type="text" placeholder="search or jump to..." name="searchbar" id="search">
             <a href="#"><div>Pull requests</div></a>
             <a href="#"><div>Marketplace</div></a>
@@ -78,6 +126,26 @@
             <a href="#"><img src="../Github_Challenge(10March)/img/profile.png"></a>
         </div>
     </div>
+
+    <div id="container2">
+        <div id="section1">
+            <img src="../Github_Challenge(10March)/img/repo.png">
+            <a href="#">PushpakSakate</a>
+            <span id="span1">/</span>
+            <a href="#">Web_Development</a>
+            <span id="span2">Public</span>
+        </div>
+
+        <div id="section2">
+            <button class="butt1">
+                <img src="../Github_Challenge(10March)/img/pin1.png" height="20px" width="20px"><span>Pin</span></button>
+            <button class="butt1">&#128065;<span>Unwatch</span>&#9660;</button>
+            <button class="butt1">fork</button>
+            <button class="butt1">&#9734;<span>Star</span>0</button>
+            <button class="butt1">&#9660;</button>
+        </div>
+    </div>
+    <hr style="border: 0.5px solid grey;">
 </body>
 
 </html>
