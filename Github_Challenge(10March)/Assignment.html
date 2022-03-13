@@ -24,7 +24,8 @@
             align-items: center;
             justify-content: space-evenly;
         }
-        #div1>a{
+
+        #div1>a {
             text-decoration: none;
             color: white;
         }
@@ -36,7 +37,7 @@
             border-radius: 6px;
             height: 20px;
             width: 250px;
-            background-color: black;          
+            background-color: black;
         }
 
         #div2 {
@@ -46,7 +47,8 @@
             justify-content: end;
             align-items: center;
         }
-        #div2>#sp1{
+
+        #div2>#sp1 {
             font-size: 12px;
             width: 20px;
             color: white;
@@ -65,7 +67,8 @@
             height: 24px;
             width: 24px;
         }
-        #container2{
+
+        #container2 {
             height: 60px;
             width: 100%;
             background-color: black;
@@ -73,97 +76,168 @@
             align-items: center;
 
         }
-        #section1{
+
+        #section1 {
             flex-grow: 100;
         }
-        #section1>a{
+
+        #section1>a {
             text-decoration: none;
             color: blue;
         }
-        #section1>span{
+
+        #section1>span {
             color: white;
         }
-        #section1>img{
+
+        #section1>img {
             height: 15px;
             width: 10px;
             margin-left: 20px;
-    
+
         }
-        #section1>#span2{
+
+        #section1>#span2 {
             border: 1px solid grey;
             margin: 5px;
             font-size: 12px;
-            padding:3px 7px;
+            padding: 3px 7px;
             border-radius: 32px;
         }
-        #section2{
-          display: flex;
-         flex-grow: 1;
-         
+
+        #section2 {
+            display: flex;
+            flex-grow: 1;
+
         }
-        #section2>button{
+
+        #section2>button {
             background-color: black;
             padding: 7px;
             border-radius: 12px;
-            color: white;          
+            color: white;
         }
-        .butt1{
+
+        .butt1 {
             display: flex;
             align-items: center;
         }
-        .butt1>span{
-            margin:0px 5px;
+
+        .butt1>span {
+            margin: 0px 5px;
         }
-        #container3{
+
+        #container3 {
             display: flex;
             align-items: center;
             margin: 10px;
         }
-        .sec1>div{
+
+        .sec1>div {
             margin: 20px;
         }
-        .sec1>#dv1{
+
+        .sec1 strong {
+            margin: 5px;
+        }
+
+        .sec1>#dv1 {
             border: 1px solid grey;
             color: white;
-            background-color:  #1a1d21;
+            background-color: #1a1d21;
             border-radius: 6px;
             padding: 3px 7px;
         }
-        #container3>.sec1{
-            color: white;
-            display: flex;        
-            flex-grow: 2;
+
+        .sec1>#dv1:hover {
+            background-color: grey;
         }
 
-        #container3>.sec2{
+        #container3>.sec1 {
             color: white;
             display: flex;
             flex-grow: 1;
         }
-        .sec2>div{
+
+        #container3>.sec2 {
+            color: white;
+            display: flex;
+            flex-grow: 2
+        }
+
+        .sec2>div {
             margin: 20px;
         }
-        .sec2>.dv2{
+
+        .sec2>.dv2 {
             border: 1px solid grey;
             color: white;
-            background-color:  #1a1d21;
+            background-color: #1a1d21;
             border-radius: 6px;
             padding: 3px 7px;
         }
-        .sec2>.dv3{
-            background-color:#1bbc1d;
+
+        .sec2>.dv3 {
+            border: 1px solid grey;
+            color: white;
+            border-radius: 6px;
+            padding: 3px 7px;
+            background-color: green;
+        }
+
+        .sec2>.dv2:hover {
+            background-color: grey;
+        }
+
+        .sec2>.dv3:hover {
+            background-color: #1bbc1d;
+        }
+
+        #container4 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #container4>div {
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        #container4 .img1 {
+            height: 15px;
+            width: 10px;
+            margin-right: 0%;
+        }
+
+        #container4 .img2 {
+            margin-right: 6px;
+        }
+
+        #container4 .img3 {
+            height: 15px;
+            width: 15px;
+            margin-right: 6px;
         }
     </style>
 </head>
 
 <body>
+    <!-- Header start-->
     <div id="container1">
         <div id="div1">
             <img src="../Github_Challenge(10March)/img/git.png" height="25px" width="25px">
             <input type="text" placeholder="search or jump to..." name="searchbar" id="search">
-            <a href="#"><div>Pull requests</div></a>
-            <a href="#"><div>Marketplace</div></a>
-            <a href="#"><div>Explore</div></a>
+            <a href="#">
+                <div>Pull requests</div>
+            </a>
+            <a href="#">
+                <div>Marketplace</div>
+            </a>
+            <a href="#">
+                <div>Explore</div>
+            </a>
         </div>
 
         <div id="div2">
@@ -172,7 +246,9 @@
             <a href="#"><img src="../Github_Challenge(10March)/img/profile.png"></a>
         </div>
     </div>
+    <!-- Header End-->
 
+    <!-- Nav start-->
     <div id="container2">
         <div id="section1">
             <img src="../Github_Challenge(10March)/img/repo.png">
@@ -184,7 +260,8 @@
 
         <div id="section2">
             <button class="butt1">
-                <img src="../Github_Challenge(10March)/img/pin1.png" height="20px" width="20px"><span>Pin</span></button>
+                <img src="../Github_Challenge(10March)/img/pin1.png" height="20px"
+                    width="20px"><span>Pin</span></button>
             <button class="butt1">&#128065;<span>Unwatch</span>&#9660;</button>
             <button class="butt1">fork</button>
             <button class="butt1">&#9734;<span>Star</span>0</button>
@@ -192,25 +269,39 @@
         </div>
 
     </div>
-    <hr style="border: 0.5px solid #5b5959;">
 
+    <div id="container4">
+        <div class="nav"><img class="img1" src="../Github_Challenge(10March)/img/chevron-left.png"><img
+                class="img1 img2" src="../Github_Challenge(10March)/img/chevron-right.png">Code</div>
+        <div class="nav">Issues</div>
+        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/pull1.png">Pull request</div>
+        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/comment.png">Discussions</div>
+        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/Play.png">Actions</div>
+        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/shield1.png">Security</div>
+        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/graph1.png">Insights</div>
+    </div>
+    <hr style="border: 0.5px solid #5b5959;">
+    <!-- Nav End-->
+
+    <!-- Section start-->
     <div id="container3">
 
-    <div class="sec1">
-        <div id="dv1">Master</div>
-        <div>branches</div>
-        <div>1&nbsp;tag</div>
-    </div>
+        <div class="sec1">
+            <div id="dv1">Master</div>
+            <div><strong>4</strong>branches</div>
+            <div><strong>1</strong>tag</div>
+        </div>s
 
-    <div class="sec2">
-        <div class="dv2">Go to file</div>
-        <div class="dv2">Add file</div>
-        <div class="dv2">Code</div>
-        <div class="dv2 dv3">Use this template</div>
-    </div>
+        <div class="sec2">
+            <div class="dv2">Go to file</div>
+            <div class="dv2">Add file</div>
+            <div class="dv2">Code</div>
+            <div class="dv3">Use this template</div>
+        </div>
 
     </div>
-    
+    <!-- Section End-->
+
 </body>
 
 </html>
