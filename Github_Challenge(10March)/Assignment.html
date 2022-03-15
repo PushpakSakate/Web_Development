@@ -73,6 +73,7 @@
             width: 100%;
             background-color: black;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
 
         }
@@ -129,12 +130,23 @@
 
         #container3 {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            margin: 10px;
+            margin: 20px;
         }
 
-        .sec1>div {
-            margin: 20px;
+        .sec1 div {
+            margin: 20px 5px;
+            text-align: center;
+        }
+
+        .sec1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sec1 a:hover {
+            color: blue;
         }
 
         .sec1 strong {
@@ -165,8 +177,8 @@
             flex-grow: 2
         }
 
-        .sec2>div {
-            margin: 20px;
+        .sec2 div {
+            margin: 20px 5px;
         }
 
         .sec2>.dv2 {
@@ -195,13 +207,14 @@
 
         #container4 {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;          
             align-items: center;
         }
 
         #container4>div {
             color: white;
             display: flex;
+            margin: 0px 15px; 
             align-items: center;
         }
 
@@ -220,11 +233,16 @@
             width: 15px;
             margin-right: 6px;
         }
-
+        #container4 bold{
+            background-color: grey;
+            margin: 5px;
+            padding: 2px 7px;
+            border-radius: 50%;
+        }
         table {
-            border: 1px solid white;
-            border-collapse: collapse;
+            border: 1px solid grey;
             border-radius: 10px;
+            border-collapse: collapse;
             margin: 25px;
         }
 
@@ -316,7 +334,7 @@
                 <img src="../Github_Challenge(10March)/img/pin1.png" height="20px"
                     width="20px"><span>Pin</span></button>
             <button class="butt1">&#128065;<span>Unwatch</span>&#9660;</button>
-            <button class="butt1">fork</button>
+            <button class="butt1"><img src="../Github_Challenge(10March)/img/repo-forked.png" height="20px" width="20px">Fork</button>
             <button class="butt1">&#9734;<span>Star</span>0</button>
             <button class="butt1">&#9660;</button>
         </div>
@@ -326,8 +344,8 @@
     <div id="container4">
         <div class="nav"><img class="img1" src="../Github_Challenge(10March)/img/chevron-left.png"><img
                 class="img1 img2" src="../Github_Challenge(10March)/img/chevron-right.png">Code</div>
-        <div class="nav">Issues</div>
-        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/pull1.png">Pull request</div>
+        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/dot1.png">Issues</div>
+        <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/pull1.png">Pull request<bold>1</bold></div>
         <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/comment.png">Discussions</div>
         <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/Play.png">Actions</div>
         <div class="nav"><img class="img3" src="../Github_Challenge(10March)/img/shield1.png">Security</div>
@@ -341,16 +359,23 @@
 
         <div class="sec1">
             <div id="dv1">Master</div>
-            <div><strong>4</strong>branches</div>
-            <div><strong>1</strong>tag</div>
+            <a href="#">
+                <div><img src="../Github_Challenge(10March)/img/git-branch.png" height="15px"
+                        width="15px"><strong>4</strong>
+            </a>branches
         </div>
+        <a href="#">
+            <div><img src="../Github_Challenge(10March)/img/tag.png" height="15px" width="15px"><strong>1</strong>
+        </a>tag
+    </div>
+    </div>
 
-        <div class="sec2">
-            <div class="dv2">Go to file</div>
-            <div class="dv2">Add file</div>
-            <div class="dv2">Code</div>
-            <div class="dv3">Use this template</div>
-        </div>
+    <div class="sec2">
+        <div class="dv2">Go to file</div>
+        <div class="dv2">Add file</div>
+        <div class="dv2">Code</div>
+        <div class="dv3">Use this template</div>
+    </div>
 
     </div>
 
@@ -359,13 +384,13 @@
         <table>
             <tr>
                 <th colspan="3"><a href="#" id="name">anushbhatia</a><a href="#">Merge pull request</a> <a
-                        href="#">#1283</a><a href="#">from soujo/contact-validation</a>
+                        href="#">#1283</a><a href="#">from soujo/contact-validation..</a>
                     <a href="#" id="dot">…</a>
                     1
                     <a href="#">5ca74ee</a>
                     <a href="#">5 days ago</a>
                     <a href="#">Git stats</a>
-                    <a href="#">1,320</a>commits
+                    <a href="#"><img src="../Github_Challenge(10March)/img/history1.png" height="20px" width="25px">1,320</a>commits
                 </th>
             </tr>
 
