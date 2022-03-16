@@ -11,6 +11,17 @@
             height: 200px;
             width: 200px;
         }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            transition:transform 2s;
+           
+        }
+        img:hover{
+            transform: rotate(360deg);
+        }
     </style>
 </head>
 
@@ -28,7 +39,7 @@
 
     <button onclick="script();style.visibility='hidden';">Submit</button>
 
-    <img id="p3" src="../img/black forest.jpg">
+    <div><img id="p3" src="../img/black forest.jpg"></div>
 
 </body>
 
