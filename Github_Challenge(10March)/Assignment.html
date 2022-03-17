@@ -87,14 +87,19 @@
             color: blue;
         }
 
+        #section1>a:hover {
+            text-decoration: underline;
+        }
+
         #section1>span {
             color: white;
         }
 
         #section1>img {
-            height: 15px;
-            width: 10px;
+            height: 20px;
+            width: 15px;
             margin-left: 20px;
+            margin-right: 10px;
 
         }
 
@@ -112,11 +117,22 @@
 
         }
 
-        #section2>button {
-            background-color: black;
-            padding: 7px;
+        #section2>div {
+            border: 1px solid white;
+            background-color: #1a1d21;
+            margin-right: 5px;
+            padding: 2px 10px;
             border-radius: 12px;
             color: white;
+        }
+
+        #section2>div:hover {
+            background-color: grey;
+        }
+
+        #section2 a {
+            color: white;
+            text-decoration: none;
         }
 
         .butt1 {
@@ -166,6 +182,9 @@
             border-radius: 50%;
         }
 
+        .container3 {
+            display: flex;
+        }
 
         .block1 {
             display: flex;
@@ -202,7 +221,7 @@
 
         .box1 {
             border: 1px solid white;
-            padding: 10px 15px;
+            padding: 3px 7px;
             border-radius: 6px;
             background-color: rgb(33, 38, 45);
         }
@@ -213,7 +232,7 @@
 
         .box3 {
             border: 1px solid white;
-            padding: 10px 15px;
+            padding: 3px 7px;
             border-radius: 6px;
             background-color: rgb(35, 134, 54);
         }
@@ -241,28 +260,40 @@
         /*Section 4 starts*/
         table {
             border: 1px solid white;
-            margin: 25px;
+            margin: 0px 20px;
             border-collapse: collapse;
         }
 
         table th {
             color: white;
             background-color: rgb(33, 38, 45);
-            padding: 8px 20px 10px;
+            padding: 5px 2px 5px;
         }
-        table th #name:hover{
-            color:white;
-           
+
+        table th #pro {
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;
+            margin-left: 5px;
+            border-radius: 50%;
         }
-        table th #dot{
-            background-color:grey;
+
+        table th #name:hover {
+            color: white;
+
+        }
+
+        table th #dot {
+            background-color: grey;
             padding: 0px 2px;
-            margin-right:70px;
+            margin-right: 70px;
         }
-        table th a:hover{
+
+        table th a:hover {
             color: blue;
             text-decoration: underline;
         }
+
         table td {
             color: white;
             padding: 8px 20px 10px;
@@ -276,7 +307,8 @@
         table tr {
             border-bottom: 1px solid white;
         }
-        table tr .img2{
+
+        table tr .img2 {
             margin: 3px;
         }
 
@@ -286,6 +318,81 @@
 
         table td>a:hover {
             color: blue;
+        }
+
+        .fold img {
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+        }
+
+        .part2 h2 {
+            color: white;
+        }
+
+        .part2 p {
+            color: white;
+            font-size: 15px;
+            margin: 0%;
+        }
+
+        .part2 img {
+            height: 12px;
+            width: 12px;
+            margin-right: 5px;
+        }
+
+        .part2 #link {
+            margin-top: 20px;
+        }
+
+        .part2 #link a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .part2 #link a:hover {
+            text-decoration: underline;
+        }
+
+        .lan {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .lang1 a {
+            border: 1px solid rgb(88, 166, 255);
+            color: rgb(88, 166, 255);
+            background-color: rgba(56, 139, 253, 0.15);
+            border-radius: 24px;
+            padding: 0px 10px;
+            margin-right: 5px;
+            text-decoration: none;
+
+        }
+
+        .lang1 a:hover {
+            color: white;
+            background-color: rgb(88, 166, 255);
+        }
+
+        .lan2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .lan3 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .lan4 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -322,18 +429,19 @@
             <a href="#">PushpakSakate</a>
             <span id="span1">/</span>
             <a href="#">Web_Development</a>
-            <span id="span2">Public</span>
+            <span id="span2">Public template</span>
         </div>
 
         <div id="section2">
-            <button class="butt1">
-                <img src="../Github_Challenge(10March)/img/pin1.png" height="20px"
-                    width="20px"><span>Pin</span></button>
-            <button class="butt1">&#128065;<span>Unwatch</span>&#9660;</button>
-            <button class="butt1"><img src="../Github_Challenge(10March)/img/repo-forked.png" height="20px"
-                    width="20px">Fork</button>
-            <button class="butt1">&#9734;<span>Star</span>0</button>
-            <button class="butt1">&#9660;</button>
+            <div class="butt1">
+                <a href="#"><img src="../Github_Challenge(10March)/img/pin1.png" height="20px"
+                        width="20px"><span>Pin</span></a>
+            </div>
+            <div class="butt1"><a href="#">&#128065;<span>Unwatch</span>&#9660;</a></div>
+            <div class="butt1"><a href="#"><img src="../Github_Challenge(10March)/img/repo-forked.png" height="20px"
+                        width="20px">Fork</a></div>
+            <div class="butt1"><a href="#">&#9734;<span>Star</span>0</a></div>
+            <div class="butt1"><a href="#">&#9660;</a></div>
         </div>
 
     </div>
@@ -374,16 +482,22 @@
             <div class="block2">
                 <table>
                     <tr>
-                        <th colspan="3"><a href="#" id="name">anushbhatia</a> <a href="#">Merge pull request</a> <a href="#">#1283</a> <a href="#">from soujo/contact-validation</a>
-                            <a id="dot">…</a>
-                            <a href="#"><img class="img2" src="../Github_Challenge(10March)/img/comment (1).png" height="20px" width="20px">1</a>
+                        <th colspan="3"><img id="pro" src="../Github_Challenge(10March)/img/profile.png"><a href="#"
+                                id="name">anushbhatia</a> <a href="#">Merge pull request</a> <a href="#">#1283</a> <a
+                                href="#">from soujo/contact-validation</a>
+                            <a href="#" id="dot">…</a>
+                            <a href="#"><img class="img2" src="../Github_Challenge(10March)/img/comment (1).png"
+                                    height="20px" width="20px">1</a>
                             <a href="#">5ca74ee</a>
                             <a href="#">5 days ago</a>
                             <a href="#">Git stats</a>
-                            <a href="#"><img class="img2" src="../Github_Challenge(10March)/img/history1.png" height="20px" width="25px">1,320</a>commits</th>
+                            <a href="#"><img class="img2" src="../Github_Challenge(10March)/img/history1.png"
+                                    height="20px" width="25px">1,320</a>commits
+                        </th>
                     </tr>
                     <tr class="">
-                        <td class="">.github/<a href="#">workflows</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file-directory.png">.github/<a
+                                href="#">workflows</a></td>
                         <td class="">
                             <a href="#">Delete labels.json</a>
                         </td>
@@ -391,68 +505,78 @@
                         </td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">assets</a></td>
-                        <td class=""><a href="#">get-in-touch validation improved</a></td>
+                        <td class="fold"><a href="#"><img
+                                    src="../Github_Challenge(10March)/img/file-directory.png">assets</a></td>
+                        <td class=""><a href="#"><img src="">get-in-touch validation improved</a></td>
                         <td class="">6 days ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">readme_assets</a></td>
+                        <td class="fold"><a href="#"><img
+                                    src="../Github_Challenge(10March)/img/file-directory.png">readme_assets</a></td>
                         <td class=""><a href="#">Update README to add OSD to Open Source Projects list</a></td>
                         <td class="">8 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">.gitattributes</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">.gitattributes</a></td>
                         <td class=""><a href="#">Added .gitattributes</a></td>
                         <td class="">2 years ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">.gitignore</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">.gitignore</a>
+                        </td>
                         <td class=""><a href="#">Updated gitignore with VSCODE exclusion Bug</a></td>
                         <td class="">8 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">404.html</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">404.html</a>
+                        </td>
                         <td class=""><a href="#">
                                 replace my googleAnalytics ID with the provided ID</a></td>
                         <td class="">4 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">CODE_OF_CONDUCT.md</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">CODE_OF_CONDUCT.md</a></td>
                         <td class=""><a href="#">
                                 Revert "Created GitHub pages branch"</a></td>
                         <td class="">2 years ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">CONTRIBUTING.md</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">CONTRIBUTING.md</a></td>
                         <td class=""><a href="#">
                                 Update CONTRIBUTING.md</a></td>
                         <td class="">5 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">LICENSE</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">LICENSE</a>
+                        </td>
                         <td class=""><a href="#">Updated LICENSE</a></td>
                         <td class="">2 years ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">README.md</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">README.md</a>
+                        </td>
                         <td class=""><a href="#">Update README.md</a></td>
                         <td class="">
                             3 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">design.html</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">design.html</a></td>
                         <td class=""><a href="#">Removed Commented Code and Reduced Possible LOC</a></td>
                         <td class="">last month</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">education.html
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">education.html
                             </a></td>
                         <td class=""><a href="#">Change the whole media-query code of education's CSS and HTML file, t…
                             </a></td>
                         <td class=""> 12 days ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">event.html
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">event.html
 
                             </a></td>
                         <td class=""><a href="#">Set default theme as "dark"
@@ -460,40 +584,91 @@
                         <td class="">2 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">experience.html</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">experience.html</a></td>
                         <td class=""><a href="#">Carousel issue resolved</a></td>
                         <td class="">6 days ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">index.html
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">index.html
                             </a></td>
                         <td class=""><a href="#"> Set default theme as "dark"</a></td>
                         <td class=""> 2 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">index.html
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a href="#">index.html
                             </a></td>
                         <td class=""><a href="#"> Set default theme as "dark"</a></td>
                         <td class=""> 2 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">projects.html</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">projects.html</a></td>
                         <td class=""><a href="#">Set default theme as "dark"</a></td>
                         <td class="">2 months ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">reference.html</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">reference.html</a></td>
                         <td class=""><a href="#">Updated reference.html</a></td>
                         <td class="">12 days ago</td>
                     </tr>
                     <tr class="">
-                        <td class=""><a href="#">research.html</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file.png"><a
+                                href="#">research.html</a></td>
                         <td class=""><a href="#">Responsiveness of research page</a></td>
                         <td class="">13 days ago</td>
                     </tr>
                 </table>
             </div>
         </div>
+        <div class="part2">
+            <h2>About</h2>
+            <p>A community maintained open source</p>
+            <p>project aimed at making a personal</p>
+            <p>for researchers, developers, and</p>
+            <p>analysts simple, fast, and less</p>
+            <p>cumbersome. We make sure you have a</p>
+            <p>website to showcase your</p>
+            <p>work while you can spend time on your</p>
+            <p>and innovative endeavors.</p>
+            <div id="link"><img src="../Github_Challenge(10March)/img/link.png"><a
+                    href="#">portfolio.PushpakSakate.com/</a></div>
+
+            <!-- langauage Contents Start-->
+            <div class="lan">
+                <div class="lang1"><a href="#">javascript</a></div>
+                <div class="lang1"><a href="#">css</a></div>
+                <div class="lang1"><a href="#">html</a></div>
+                <div class="lang1"><a href="#">portfolio</a></div>
+                <div class="lang1"><a href="#">sci</a></div>
+            </div>
+
+            <div class="lan2">
+                <div class="lang1"><a href="#">slop</a></div>
+                <div class="lang1"><a href="#">nwoc</a></div>
+                <div class="lang1"><a href="#">ch-20</a></div>
+                <div class="lang1"><a href="#">slop20</a></div>
+                <div class="lang1"><a href="#">sci20</a></div>
+            </div>
+
+
+            <div class="lan3">
+                <div class="lang1"><a href="#">hacktoberfest-accepted</a></div>
+                <div class="lang1"><a href="#">dwoc</a></div>
+                <div class="lang1"><a href="#">dwoc-2020</a></div>
+            </div>
+
+
+            <div class="lan4">
+                <div class="lang1"><a href="#">swoc2021</a></div>
+                <div class="lang1"><a href="#">gsso21</a></div>
+                <div class="lang1"><a href="#">lgmsoc21</a></div>
+                <div class="lang1"><a href="#">psoc21</a></div>
+            </div>
+            <!-- langauage Contents End-->
+        </div>
+    </div>
 </body>
 
 </html>
