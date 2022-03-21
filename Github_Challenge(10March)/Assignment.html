@@ -12,6 +12,7 @@
             margin: 0px;
         }
 
+        /* Header Start*/
         #container1 {
             display: flex;
             background-color: #1a1d21;
@@ -68,6 +69,9 @@
             width: 24px;
         }
 
+        /* Header End*/
+
+        /* Nav Start*/
         #container2 {
             height: 60px;
             width: 100%;
@@ -84,7 +88,7 @@
 
         #section1>a {
             text-decoration: none;
-            color: blue;
+            color: rgb(88, 166, 255);
         }
 
         #section1>a:hover {
@@ -144,8 +148,6 @@
             margin: 0px 5px;
         }
 
-
-
         #container4 {
             display: flex;
             flex-wrap: wrap;
@@ -182,6 +184,9 @@
             border-radius: 50%;
         }
 
+        /* Nav End*/
+
+        /* Section Start*/
         .container3 {
             display: flex;
         }
@@ -256,8 +261,6 @@
             flex-wrap: wrap;
         }
 
-        /*file navigation bar ends*/
-        /*Section 4 starts*/
         table {
             border: 1px solid white;
             margin: 0px 20px;
@@ -317,7 +320,7 @@
         }
 
         table td>a:hover {
-            color: blue;
+            color: rgb(88, 166, 255);
         }
 
         .fold img {
@@ -394,6 +397,181 @@
             justify-content: space-between;
             margin-top: 10px;
         }
+
+        #readsec {
+            margin-top: 20px;
+        }
+
+        #readsec>div {
+            margin-top: 10px;
+        }
+
+        .read a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .read a:hover {
+            color: rgb(88, 166, 255);
+        }
+
+        #release {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        #release a {
+            color: white;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+
+        #release strong {
+            background-color: grey;
+            margin: 5px;
+            padding: 2px 7px;
+            border-radius: 50%;
+        }
+
+        #release>div {
+            color: grey;
+            margin-top: 10px;
+        }
+
+        #release>.rel2>a {
+            color: grey;
+            margin-left: 20px;
+        }
+
+        #release>.rel2>a:hover {
+            color: rgb(88, 166, 255);
+        }
+
+        #book {
+            display: flex;
+        }
+
+        #book>.rel2>a:hover {
+            color: rgb(88, 166, 255);
+        }
+
+        .rel3>#let {
+            margin-left: 25px;
+            padding: 2px 7px;
+            color: lime;
+            border: 1px solid lime;
+            border-radius: 30px;
+        }
+
+        #contrisec {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        #contrisec a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #contrisec strong {
+            background-color: grey;
+            margin: 5px;
+            padding: 2px 3px;
+            border-radius: 12px;
+        }
+
+        .contri>img {
+            border: 1px solid white;
+            margin: 5px;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+        }
+
+        .contri {
+            margin-bottom: 15px;
+        }
+
+        #contrisec .contri1>a {
+            color: rgb(88, 166, 255);
+        }
+
+        #contrisec .contri1>a:hover {
+            text-decoration: underline;
+        }
+
+        #chartbox>.char {
+            color: white;
+            font-size: 20px;
+        }
+
+        #chartbox>h3 {
+            color: white;
+        }
+
+        #chart {
+            display: flex;
+            margin-right: 100px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .char {
+            height: 5px;
+        }
+
+        .char1 {
+            width: 56%;
+            background-color: red;
+        }
+
+        .char2 {
+            width: 27%;
+            background-color: blue;
+        }
+
+        .char3 {
+            width: 17%;
+            background-color: orange;
+        }
+
+        #lan>ul {
+            color: white;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        li {
+            font-size: 30px;
+        }
+
+        li span {
+            color: white;
+            font-size: 14px;
+            margin-left: -5px;
+        }
+
+        #li1 {
+            color: red;
+        }
+
+        #li2 {
+            color: blue;
+        }
+
+        #li3 {
+            color: orange;
+        }
+
+        ul span:hover {
+            color: rgb(88, 166, 255);
+        }
+
+        /* Section Start*/
     </style>
 </head>
 
@@ -480,6 +658,7 @@
                 </div>
             </div>
             <div class="block2">
+                <!--Table Start-->
                 <table>
                     <tr>
                         <th colspan="3"><img id="pro" src="../Github_Challenge(10March)/img/profile.png"><a href="#"
@@ -505,14 +684,14 @@
                         </td>
                     </tr>
                     <tr class="">
-                        <td class="fold"><a href="#"><img
-                                    src="../Github_Challenge(10March)/img/file-directory.png">assets</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file-directory.png"><a
+                                href="#">assets</a></td>
                         <td class=""><a href="#"><img src="">get-in-touch validation improved</a></td>
                         <td class="">6 days ago</td>
                     </tr>
                     <tr class="">
-                        <td class="fold"><a href="#"><img
-                                    src="../Github_Challenge(10March)/img/file-directory.png">readme_assets</a></td>
+                        <td class="fold"><img src="../Github_Challenge(10March)/img/file-directory.png"><a
+                                href="#">readme_assets</a></td>
                         <td class=""><a href="#">Update README to add OSD to Open Source Projects list</a></td>
                         <td class="">8 months ago</td>
                     </tr>
@@ -620,6 +799,7 @@
                         <td class="">13 days ago</td>
                     </tr>
                 </table>
+                <!--Table Start-->
             </div>
         </div>
         <div class="part2">
@@ -667,8 +847,74 @@
                 <div class="lang1"><a href="#">psoc21</a></div>
             </div>
             <!-- langauage Contents End-->
+
+            <!-- Reading Section End-->
+            <div id="readsec">
+                <div class="read"><a href="#"><img src="../Github_Challenge(10March)/img/book.png">Readme</a></div>
+                <div class="read"><a href="#"><img src="../Github_Challenge(10March)/img/law.png">MIT License</a></div>
+                <div class="read"><a href="#"><img src="../Github_Challenge(10March)/img/heart1.png">Code of conduct</a>
+                </div>
+                <div class="read"><a href="#">&#9734;1.3K stars</a></div>
+                <div class="read"><a href="#">&#128065;25 watching</a></div>
+                <div class="read"><a href="#"><img src="../Github_Challenge(10March)/img/repo-forked.png">992 forks</a>
+                </div>
+            </div>
+            <!-- Reading Section End-->
+            <hr style="border: 0.5px solid #5b5959;">
+            <div id="release">
+                <div class="rel"><a href="#">Releases<strong>1</strong></a></div>
+                <div id="book">
+                    <div class="rel rel2"><a href="#"><img src="../Github_Challenge(10March)/img/tag_green.png">stable
+                            Version 1.0.0</a></div>
+                    <div class="rel3"><a id="let" href="#">Latest</a></div>
+                </div>
+                <div class="rel2"><a href="#">8 days ago</a></div>
+            </div>
+            <hr style="border: 0.5px solid #5b5959;">
+            <div id="contrisec">
+                <div class="contri"><a href="#">Contributors<strong>150</strong></a></div>
+                <div class="contri"><img src="../img/music-logo.png">
+                    <img src="../img/Pushpak Sakate_2.jpg">
+                    <img src="../img/music-logo.png">
+                    <img src="../img/linkedIn.jpg">
+                    <img src="../img/music-logo.png">
+                    <img src="../img/mustang.jfif">
+                    <img src="../img/pms.jpg">
+                    <img src="../Github_Challenge(10March)/img/img.jpg">
+                    <img src="../img/sg.jpg">
+                    <img src="../Github_Challenge(10March)/img/img1.jpg">
+                </div>
+                <div class="contri contri1"><a href="#">+ 140 Contributors</a></div>
+
+            </div>
+            <hr style="border: 0.5px solid #5b5959;">
+
+            <div id="chartbox">
+                <h3>Languages</h3>
+                <div id="chart">
+                    <div class="char char1"></div>
+                    <div class="char char2"></div>
+                    <div class="char char3"></div>
+                </div>
+            </div>
+
+            <div id="lan">
+                <ul>
+                    <a href="#">
+                        <li id="li1"><span>HTML</span></li>
+                    </a>
+                    <a href="#">
+                        <li id="li2"><span>CSS</span></li>
+                    </a>
+                    <a href="#">
+                        <li id="li3"><span>JavaScript</span></li>
+                    </a>
+                </ul>
+            </div>
+
         </div>
     </div>
+    <!-- Section End-->
 </body>
 
 </html>
