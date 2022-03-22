@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        form {
+            text-align: center;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        #bold {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body class="contact">
+    <h1 style="text-align: center;">Contact Us</h1>
+    <form>
+
+        <b> Maharashtra Tourism Center,Mumbai. </b><br>
+        <b>Email:</b>MHTourisminfo@gmail.com
+        <br>
+        <b>Tel No.:</b>012345 <b id="bold">/</b> <b>Phone No.:</b>0123456789
+        <br><br>
+
+        <label for="First name">First Name</label>
+        <input placeholder="First Name" id="First name" type="text" name="customer name"><br><br>
+
+        <label for="Middle name">Middle Name</label>
+        <input placeholder="Middle Name" id="Middle name" type="text" name="customer name"><br><br>
+
+        <label for="Last name">Last Name</label>
+        <input placeholder="Last Name" id="Last name" type="text" name="customer name"><br><br>
+
+        <label for="Gmail ID">*Gmail</label>
+        <input placeholder="Enter Your Email Id." id="Gmail ID" type="text" name="gmail"><br><br>
+
+        <label for="Mobile NO">*Mobile NO</label>
+        <input placeholder="Enter Your Mobile No." id="Mobile NO." type="tel" name="MobileNo"><br><br>
+
+        <b>*ADDRESS</b><br><br>
+        <textarea></textarea><br><br>
+
+        <label>*Gender</label><br>
+        <input id="male" type="radio" name="gender">
+        <label for="male">Male</label>
+
+        <input id="female" type="radio" name="gender">
+        <label for="female">Female</label>
+
+        <input id="othee" type="radio" name="gender">
+        <label for="otheer">Other</label><br><br>
+
+        <label>*How satisfied you with our this site</label><br>
+        <select>
+            <option>somewhat satisfied</option>
+            <option>satisfied</option>
+            <option>very satisfied</option>
+        </select><br><br>
+
+        <label>*Did you get the information you want?</label><br>
+        <input id="recommend" type="radio" name="recommendation">
+        <label for="recommend">Yes</label>
+        <input id="recommend" type="radio" name="recommendation">
+        <label for="recommend">No</label><br><br><br>
+
+        <label>How Would you rate us?</label><br>
+        <span>First Star</span>
+        <input id="five" type="range" name="5 star">
+        <label for="five">Five star</label><br><br><br>
+
+
+        <input type="submit" value="Save">
+        <input type="button" value="SignUp" onClick="create()" />
+    </form>
+</body>
+
+</html>
