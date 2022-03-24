@@ -7,8 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
+        body {
+            margin: 0px;
+            background-image: url('../MHTourism/Image/MH.jpg');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         form {
             text-align: center;
+            font-size: 20px;
         }
 
         label {
@@ -17,6 +26,28 @@
 
         #bold {
             font-size: 20px;
+        }
+
+        input {
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+
+        #button {
+            background-color: lightgrey;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        textarea {
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+
+        select {
+            background-color: lightgreen;
+            font-size: 15px;
+            border-radius: 3px 5px;
         }
     </style>
 
@@ -79,9 +110,12 @@
         <label for="five">Five star</label><br><br><br>
 
 
-        <a href="Submit.html"><input type="button" value="Save"></a>
-        <input type="button" value="SignUp" onClick="create()" />
+        <a href="Submit.html"><input id="button" type="button" value="Save"></a>
+        <input id="button" type="button" value="SignUp" onClick="create()">
     </form>
+
+    <input id="button" type="button" value="Back" onclick="history.go(-1)">
+
 </body>
 
 </html>

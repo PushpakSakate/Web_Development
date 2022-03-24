@@ -55,8 +55,29 @@ p{
     text-shadow: 2px 2px 4px black;
 }
 p:hover{
+    transition: 2s;
+    transform: rotate(360deg);
+}
+p:hover{
     color:lightblue;
     text-shadow: 2px 2px 4px black;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+table th{
+    font-size: 25px;
+    color: aqua;
+    font-family: 'supermercado one', cursive;
+}
+table img{
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    padding: 5px;
 }
 @media screen and (min-width:700px) {
     ul{
