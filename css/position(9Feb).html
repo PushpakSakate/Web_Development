@@ -9,7 +9,7 @@
     <style>
         .container {
             border: 1px solid red;
-            position: relative;
+            position: absolute;
             padding: 15px;
             height: 500px;
             width: 500px;
@@ -17,7 +17,7 @@
             top: 30px;
         }
 
-        .box1 {
+        .container>.box1 {
             position: sticky;
             border: 1px solid blue;
             width: 100px;
@@ -26,7 +26,7 @@
         }
 
         .container2 {
-            border: 1px solid red;
+            border: 1px solid green;
             position:relative;
             padding: 15px;
             height: 500px;
@@ -38,14 +38,10 @@
 
 <body>
     <div class="container">
-        <div class="box1">
-        </div>
-
+        <div class="box1"></div>
     </div>
 
-    <div class="container2">
-
-    </div>
+    <div class="container2"></div>
 </body>
 
 </html>
