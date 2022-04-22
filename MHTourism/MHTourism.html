@@ -6,30 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maharashtra</title>
-    <link rel="stylesheet" href="../MHTourism/MH_Tourism.css">
+    <style>
+        .flip-box {
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: transparent;
+        }
+
+        .flip-box-back {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-back>p {
+            margin: 0px;
+        }
+
+        #GP {
+            color: lightcyan;
+            font-size: 25px;
+        }
+
+        #GP1 {
+            color: limegreen;
+            font-size: 20px;
+        }
+
+        #GP2 {
+            color: gray;
+            font-size: 15px;
+            padding: 5px -10px;
+
+        }
+    </style>
+    <link rel="stylesheet" href="MH_Tourism.css">
 </head>
 
 <body>
     <nav>
-        <a href="#"><img src="../MHTourism/Image/MH_Logo.png"></a>
+        <a href="#"><img src="http://pushpak.ecssofttech.com/MH_Tourism/Image/MH_Logo.png"></a>
         <ul>
             <a href="#">
                 <li>Home</li>
             </a>
-            <a href="../MHTourism/About.html">
+            <a href="http://pushpak.ecssofttech.com/MH_Tourism/About.html">
                 <li>About</li>
             </a>
             </a>
-            <a href="../MHTourism/Contact.html">
+            <a href="http://pushpak.ecssofttech.com/MH_Tourism/Contact.html">
                 <li>Contact Us</li>
             </a>
         </ul>
     </nav>
 
     <div id="container">
-        <p>WELCOME TO MAHARASHTRA</p>
+        <p id="intro">WELCOME TO MAHARASHTRA</p>
     </div>
 
+    <!--
     <table border="1px solid black">
 
         <tr>
@@ -58,6 +118,157 @@
         </tr>
 
     </table>
+`     -->
+    <div id="section">
+        <div class="slider">
+            <span style="--i:1;"><a href="https://ratnagiri.gov.in/tourist-place/ganapati-pule-temple/">
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img title="Ganpati Pule"
+                                    src="http://pushpak.ecssofttech.com/MH_Tourism/Image/Ganpatipule Temple.png">
+                            </div>
+                            <div class="flip-box-back">
+                                <p id="GP">Ganpatipule Temple</p>
+                                <p id="GP1">Ganpatipule has one of the most spectacular beaches along the Konkan Coast
+                                    in Maharashtra....</p>
+                                <p id="GP2">Read More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </a></span>
+
+
+            <span style="--i:2;"><a href="https://mumbaicity.gov.in/tourism/tourist-places/">
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img title="Mumbai" src="http://pushpak.ecssofttech.com/MH_Tourism/Image/mumbai.jpg">
+                            </div>
+                            <div class="flip-box-back">
+                                <p id="GP">Mumbai</p>
+                                <p id="GP1">Mumbai, formerly Bombay, city, capital of Maharashtra state, southwestern
+                                    India. It is the country’s financial and commercial centre and its principal port on
+                                    the Arabian Sea.....</p>
+                                <p id="GP2">Read More</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </a></span>
+
+            <span style="--i:3;"><a href="https://www.satara.gov.in/en/tourist-place/mahabaleshwar/">
+
+                    <div class="flip-box">
+                        <div class="flip-box-inner">
+                            <div class="flip-box-front">
+                                <img title="Mahabaleshwar"
+                                    src="http://pushpak.ecssofttech.com/MH_Tourism/Image/mahabaleshwar.jpg">
+                            </div>
+                            <div class="flip-box-back">
+                                <p id="GP">Mahabaleshwar</p>
+                                <p id="GP1">Mahabaleshwar,Mahabaleshwar is a hill station located in the Western Ghats, in Satara district of Maharashtra. Apart from its strawberries, Mahabaleshwar is...</p>
+                                <p id="GP2">Read More</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </a></span>
+
+            <span style="--i:4;"><a href="https://www.konkan.me/">
+                
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img title="Konkan"
+                        src="http://pushpak.ecssofttech.com/MH_Tourism/Image/konkan.jpg">
+                        </div>
+                    <div class="flip-box-back">
+                        <p id="GP">Konkan</p>
+                        <p id="GP1">Konkan,Konkan is ...</p>
+                        <p id="GP2">Read More</p>
+                    </div>
+                </div>
+            </div>
+                    
+                    </a></span>
+
+            <span style="--i:5;"><a href="https://www.satara.gov.in/en/tourist-places/">
+                
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img title="Satara"
+                        src="http://pushpak.ecssofttech.com/MH_Tourism/Image/Satara.jpg">
+                        </div>
+                    <div class="flip-box-back">
+                        <p id="GP">Satara</p>
+                        <p id="GP1">Satara,Satara is ...</p>
+                        <p id="GP2">Read More</p>+++
+                    </div>
+                </div>
+            </div>
+                    
+                    </a></span>
+
+            <span style="--i:6;"><a href="https://sangli.nic.in/tourist-places/">
+                
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img title="Sangli"
+                        src="http://pushpak.ecssofttech.com/MH_Tourism/Image/sangli.jpg">
+                        </div>
+                    <div class="flip-box-back">
+                        <p id="GP">Sangli</p>
+                        <p id="GP1">Sangli,Sangli is ...</p>
+                        <p id="GP2">Read More</p>+++
+                    </div>
+                </div>
+            </div>
+                    </a></span>
+
+            <span style="--i:7;"><a href="https://kolhapur.gov.in/en/kolhapur-tourism/">
+
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img title="Kolhapur"
+                        src="http://pushpak.ecssofttech.com/MH_Tourism/Image/kolhapur.jpg">
+                        </div>
+                    <div class="flip-box-back">
+                        <p id="GP">Kolhapur</p>
+                        <p id="GP1">Kolhapur,Kolhapur is ...</p>
+                        <p id="GP2">Read More</p>+++
+                    </div>
+                </div>
+            </div>
+                    </a></span>
+
+            <span style="--i:8;"><a href="https://nashik.gov.in/tourism/tourists-places/">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img title="Nashik"
+                        src="http://pushpak.ecssofttech.com/MH_Tourism/Image/nashik.jpg">
+                        </div>
+                    <div class="flip-box-back">
+                        <p id="GP">Nashik</p>
+                        <p id="GP1">Nashik,Nashik is ...</p>
+                        <p id="GP2">Read More</p>+++
+                    </div>
+                </div>
+            </div>
+                    </a></span>
+
+        </div>
+    </div>
+
+
 </body>
 
 </html>
