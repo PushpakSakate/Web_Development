@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">node
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" id="xyz" onsubmit="number()">
+
+        <label for="Fname">Fname</label>
+        <input type="text" id="Fname" name="Fname"><br><br>
+
+        <label for="Mname">Mname</label>
+        <input type="text" id="Mname" name="MName"><br><br>
+
+        <label for="Lname">Lname</label>
+        <input type="text" id="Lname" name="Lname"><br><br>
+
+        <button>Submit</button>
+
+    </form>
+
+    <script>
+
+        function number(){
+            const x = document.forms["xyz"] ["Fname"];
+            const a = document.forms["xyz"] ["Mname"];
+            const b = document.forms["xyz"] ["Lname"];
+            console.log(x);
+            const y = x.value;
+            const l = a.value;
+            const m = b.value;
+            if(y == ""){
+                alert("Uhh Write Something!..");
+                return false;
+            }
+            else  if(l == ""){
+                alert("Uhh Write Something!..");
+                return false;
+            }
+            else  if(m == ""){
+                alert("Uhh Write Something!..");
+                return false;
+            }
+            console.log(y);
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

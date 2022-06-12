@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Class -->
+
+    <!-- <p class="abc">Pushpak</p>
+    <p class="abc">Sakate</p>
+    <p class="abc">ECS</p>
+
+    <script>
+
+        const x = document.getElementsByClassName("abc");
+
+        let y = x.length;
+        for(let i=0;i<y;i++)
+        {
+            console.log(x[i]);
+        }
+    </script> -->
+
+    <!-- Tag -->
+
+    <div id="container">
+        <p>Web</p>
+        <p>App</p>
+        <p>ECS</p>
+    </div>
+    <p>Pushpak</p>
+    <p>Sakate</p>
+    <p id="demo"></p>
+
+    <script>
+
+        const x = document.getElementById("container");
+        const y = x.getElementsByTagName("p");
+        const z = document.getElementById("demo");
+        z.innerHTML = y.innerHTML;
+       console.log(z);
+    </script>
+
+</body>
+</html>

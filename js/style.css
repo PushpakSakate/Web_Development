@@ -1,0 +1,110 @@
+.main {
+    width:100%;
+    margin: 0px;
+    background-color:lightblue;
+    height: 97vh;
+    position: relative;
+
+}
+@media only screen and (max-width: 1226px) {
+    #top {
+        display: none;
+    }
+}
+.container{
+    margin: auto;
+    min-width:40%;
+    position:absolute;
+    top: 25%;
+    left:30%;
+    background-color:lightcoral;
+    height: 52%;
+    border: 5px solid;
+    border-color: lavenderblush;
+    border-top: none;
+    
+}
+.ele{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    bottom: 0px;
+    position:absolute;
+    margin-left: 5%;
+    background-color:white;
+    text-align: center;
+    font-size: 25px;
+
+}
+.btn{
+    margin: auto;
+    min-width:40%;
+    position:absolute;
+    top: 80%;
+    left:30%;
+    background-color:lightcoral;
+    height: 8%;
+    border: 5px solid;
+    border-color: lavenderblush;
+    
+}
+.ele1 {
+    width: 40%;
+    margin: auto;
+    height: 40px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    bottom: 0px;
+    margin-left: 5%;
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+}
+.title{
+    margin: auto;
+    min-width:40%;
+    position:absolute;
+    top: 10%;
+    left:30%;
+    background-color:lightcoral;
+    height: 50px;
+    border: 5px solid;
+    border-color: lavenderblush;
+    text-align: center;
+    font-size: 45px;
+}
+.top{
+    position:absolute;
+    background-color: rgb(8, 0, 0);
+    width: 60%;
+    height: 8px;
+    margin: auto;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    bottom: 0px;
+}
+.firstDiv{
+    top: 25%;
+    left:22%;
+    position:absolute;
+    width: 7%;
+    height: 10px;
+    margin: auto;
+    min-width:5%;
+    height: 52%;
+    
+}
+.topN{
+    position:absolute;
+    width: 70%;
+    height: 8px;
+    margin: auto;
+    margin-bottom: 20px;
+    bottom: 0px;
+    text-align: left;
+    font-size: 24px;
+    min-width: 20px;
+}

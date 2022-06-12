@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body,
+        div,
+        form,
+        input,
+        select,
+        p {
+            font-family: Arial;
+            font-size: 14px;
+            color: grey;
+            line-height: 22px;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            margin: 15px 0;
+            padding-bottom: 15px ;
+            font-weight: 400;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+            border: 5px solid rgb(226, 224, 255);
+        }
+
+        form {
+            width: 100%;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px #ccc;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 7px 0;
+
+        }
+
+        .item {
+            margin: 10px 0;
+        }
+
+        .item:hover p,
+        .item:hover i {
+            color: #095484;
+        }
+
+        .send {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: #095484;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #0666a3;
+        }
+
+        .name-item input,
+        .content input {
+            width: 48%;
+        }
+
+        .sem {
+            width: 49%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h1>Student Form</h1>
+
+            <div class="item">
+                <div class="name-item">
+                    <input type="text" name="name" placeholder="ID">
+                </div>
+                <div class="name-item">
+                    <input type="text" name="name" placeholder="First_Name">
+                    <input type="text" name="name" placeholder="Last_Name">
+                </div>
+            </div>
+
+            <div class="name-item">
+                <input type="text" name="name" placeholder="Email">
+                <input type="tel" name="name" placeholder="Phone_No.">
+            </div>
+
+            <div class="content">
+
+                <select class="sem">
+                    <option value="">Select Year</option>
+                    <option value="1">2018</option>
+                    <option value="2">2019</option>
+                    <option value="3">2020</option>
+                    <option value="4">2021</option>
+                    <option value="5">2022</option>
+                    <option value="6">2023</option>
+                    <option value="7">2024</option>
+                </select>
+
+                <select class="sem">
+                    <option value="">Semester</option>
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="3">III</option>
+                    <option value="4">IV</option>
+                    <option value="5">V</option>
+                    <option value="6">VI</option>
+                    <option value="7">VII</option>
+                    <option value="8">VIII</option>
+                </select>
+
+                <select>
+                    <option value="">Branch</option>
+                    <option value="1">ENTC</option>
+                    <option value="2">ELECTRIC</option>
+                    <option value="3">MECH</option>
+                    <option value="4">AUTO</option>
+                    <option value="5">CIVIL</option>
+                    <option value="6">CS</option>
+                    <option value="7">IT</option>
+                </select>
+
+            </div>
+
+            <div class="send">
+                <button type="submit" href="#">SEND</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: Arial;
+            font-size: 15px;
+            background-image: url('http://testch.ecssofttech.com/StudentFeedbackSystem/ProjectImages/college1.png');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        form {
+            margin-top: 8%;
+            border: 5px solid lightskyblue;
+            box-shadow: 0 2px 5px #ccc;
+        }
+
+        .inp {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 16px 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid lightgray;
+           
+        }
+
+        button {
+            background-color:green;
+            color: white;
+            padding: 14px 0;
+            margin: 10px 0;
+            border: 0px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .formcontainer {
+            text-align: left;
+            margin: 24px 50px 12px;
+        }
+
+        .container {
+            padding: 16px 0;
+            text-align: left;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 0;
+            padding-right: 15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Login Form</h1>
+        <div class="formcontainer">
+
+            <hr>
+
+            <div class="container">
+                <label for="login" class="h4"><strong>Username</strong></label>
+                <input type="text" class="inp" placeholder="Enter UserId" name="login">
+                <label for="psw" class="h4"><strong>Password</strong></label>
+                <input type="password" class="inp" placeholder="Enter Password" name="psw">
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="container">
+
+                <label style="padding-left: 15px"  >
+                    <input  type="checkbox" name="remember" > Remember Username
+                </label>
+
+                <span class="psw "><a href="#"> Forgot password?</a></span>
+            </div>
+    </form>
+</body>
+
+</html>
